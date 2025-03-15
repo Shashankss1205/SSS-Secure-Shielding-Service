@@ -1,0 +1,123 @@
+{
+  "https://chatgpt.com/c/67d542eb-6cec-800a-b0a3-d568a7da2dcb": [
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Karen Lopez": "Shashank Singh",
+        "Briannachester": "India",
+        "Stephensfort": "New York"
+      }
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Lake William": "Varanasi",
+        "South Rickyton": "India"
+      }
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "South Andreaburgh": "New York",
+        "Port Nicole": "Delhi",
+        "North Mackenzie": "Bangalore",
+        "Port Duaneborough": "Chennai"
+      }
+    }
+  ],
+  "https://chatgpt.com/c/67d5516d-e7b4-800a-8e70-1dd47bf60055": [
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Karen Schwartz": "Shashank Singh",
+        "Debbieshire": "Varanasi",
+        "North Frankfort": "India"
+      }
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Traceyton": "Google",
+        "East Heather": "Los Sentos",
+        "East Christopher": "New Zealand"
+      }
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "North Rebecca": "New York"
+      }
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "New Stacey": "New Delhi"
+      }
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "North Lindsay": "New Jersey"
+      }
+    }
+  ],
+  "https://chatgpt.com/c/67d5717e-cf74-800a-8ae8-374e69283d58": [
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Hodgesview": "Shashank",
+        "Lake Vanessa": "Varanasi"
+      },
+      "config": {}
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Joannview": "India"
+      },
+      "config": {}
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Jacksonfurt": "India"
+      },
+      "config": {}
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Katelynfurt": "Jacksonfurt"
+      },
+      "config": {}
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Johnsonhaven": "Katelynfurt"
+      },
+      "config": {}
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Lance Smith": "Johnsonhaven"
+      },
+      "config": {}
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Darleneburgh": "Varanasi"
+      },
+      "config": {}
+    },
+    {
+      "anonymization_method": "fake",
+      "mapping": {
+        "Floresbury": "Darleneburgh"
+      },
+      "config": {}
+    }
+  ]
+}

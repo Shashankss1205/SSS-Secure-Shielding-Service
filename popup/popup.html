@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Shielding Service</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="../icons/icon16.png" alt="SSS Logo" class="logo">
+      <h1>Secure Shielding Service</h1>
+    </div>
+    
+    <div class="toggle-container">
+      <span class="toggle-label">Extension Status:</span>
+      <label class="switch">
+        <input type="checkbox" id="extensionToggle" checked>
+        <span class="slider"></span>
+      </label>
+      <span class="status-text enabled" id="toggleStatus">Enabled</span>
+    </div>
+    
+    <div class="config-item">
+      <label class="config-label">Sites Available</label>
+      <div class="multi-select" id="sitesSelect">
+        <div class="multi-select-box" id="sitesBox">
+          <div class="selected-items" id="selectedSites"></div>
+          <span class="placeholder">Select sites...</span>
+        </div>
+        <div class="multi-select-dropdown" id="sitesList">
+          <div class="dropdown-item">
+            <input type="checkbox" id="domain-chatgpt" value="Chatgpt">
+            <label for="domain-chatgpt">wwww.chatgpt.com</label>
+          </div>
+          <div class="dropdown-item">
+            <input type="checkbox" id="domain-claude" value="Claude" disabled>
+            <label for="domain-claude">www.claude.ai</label>
+          </div>
+          <div class="dropdown-item">
+            <input type="checkbox" id="domain-gemini" value="Gemini" disabled>
+            <label for="domain-gemini">gemini.google.com</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="config-item">
+      <label class="config-label">ML Models in use</label>
+      <div class="multi-select" id="modelsSelect">
+        <div class="multi-select-box" id="modelsBox">
+          <div class="selected-items" id="selectedModels"></div>
+          <span class="placeholder">Select models...</span>
+        </div>
+        <div class="multi-select-dropdown" id="modelsList">
+          <div class="dropdown-item">
+            <input type="checkbox" id="model-presidio" value="Presidio">
+            <label for="model-presidio">Presidio</label>
+          </div>
+          <div class="dropdown-item">
+            <input type="checkbox" id="model-mistral" value="Mistral" disabled>
+            <label for="model-mistral">Mistral</label>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="config-item">
+      <label class="config-label">Anonymization Method</label>
+      <div class="multi-select" id="methodsSelect">
+        <div class="multi-select-box" id="methodsBox">
+          <div class="selected-items" id="selectedMethods"></div>
+          <span class="placeholder">Select methods...</span>
+        </div>
+        <div class="multi-select-dropdown" id="methodsList">
+          <div class="dropdown-item">
+            <input type="checkbox" id="method-redacting" value="Redacting">
+            <label for="method-redacting">Redacting</label>
+          </div>
+          <div class="dropdown-item">
+            <input type="checkbox" id="method-pseudonymization" value="Pseudonymization">
+            <label for="method-pseudonymization">Pseudonymization</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="config-item">
+      <label class="config-label">PIIs to anonymize</label>
+      <div class="multi-select" id="piisSelect">
+        <div class="multi-select-box" id="piisBox">
+          <div class="selected-items" id="selectedPIIs"></div>
+          <span class="placeholder">Select PIIs...</span>
+        </div>
+        <div class="multi-select-dropdown" id="piisList">
+          <div class="dropdown-item">
+            <input type="checkbox" id="pii-name" value="Names">
+            <label for="pii-name">Names</label>
+          </div>
+          <div class="dropdown-item">
+            <input type="checkbox" id="pii-email" value="Emails">
+            <label for="pii-email">Emails</label>
+          </div>
+          <div class="dropdown-item">
+            <input type="checkbox" id="pii-phone" value="Phone Numbers">
+            <label for="pii-phone">Phone Numbers</label>
+          </div>
+          <div class="dropdown-item">
+            <input type="checkbox" id="pii-address" value="Addresses">
+            <label for="pii-address">Addresses</label>
+          </div>
+          <div class="dropdown-item">
+            <input type="checkbox" id="pii-ssn" value="SSN">
+            <label for="pii-ssn">SSN</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="status-container">
+      <div id="statusIndicator" class="status-indicator active"></div>
+      <p id="connectionStatus">Connected to anonymization service</p>
+    </div>
+    
+    <div class="footer">
+      <button id="checkConnection">Check Connection</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
